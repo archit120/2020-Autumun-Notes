@@ -192,3 +192,98 @@ cx+c_1x_1+..+c_mx_m=0
 $$
 where $c \neq 0$ because $S$ is $LI$. This implies $x \in LS(S'-\{x\})$ and $x\in LS(S)$ which is a contradiction.
 
+---
+
+#### Theorem 2.6
+
+
+
+Let $S \subseteq V$ and $|S|=n$. Let $T \subseteq LS(S)$ and $|T| = m$. Then $T$ is $LD$ if $m>n$
+
+##### Proof
+
+Lets $S=\{x_1,..,x_n\}$ and $T=\{u_1,..,u_n\}$. 
+
+$T\subseteq LS(S)\implies u_i \in LS(S)$ for $i=1,2,...,m$
+
+$u_i \in LS(S) \implies u_i = \sum_{j=1}^nA_{ij}x_j,(A_{ij}\in F) $
+
+
+
+To show that when $m>n$. This equation has non-trivial soln
+$$
+c_1u_1+...+c_mu_m=0
+$$
+Solving
+$$
+c_1 u_1 +.. +c_m u_m =0 \\
+\sum\limits_{i=1}^{i=m}c_i(\sum\limits_{j=1}^m A_{ij}x_j)=0\\
+$$
+Consider,
+$$
+\sum\limits_{i=1}^mC_i A_{ij}=0 \text{ for }j=1,...,n\\
+(c_1,..,c_m)A_{m\times n} = (0,..,0)
+$$
+The vector $c_1,.,c_m$ must have non zero solution because rank of $A_{m\times n} \leq n$. N equations, M unknowns. 
+
+---
+
+#### Definition 2.2
+
+Basis: $S \subseteq V$ is called basis of $V$ if $S$ is satisfying the following conidtions
+
+1. $LS(S)=V$
+2. $S$ must be $LI$
+
+---
+
+#### Theorem 2.7
+
+$V(F)$ 
+
+Let $B$ be basis for $V$. 
+
+$B = \{x_1,..,x_n\}$
+
+for each $x\in V \exists \text{ unique } c_1,c_2,...,c_n \in F$ st.
+
+$X=\sum\limits_{i=1}^nc_i x_i$
+
+##### Proof
+
+Necessary for $LI$
+
+---
+
+#### Theorem 2.8
+
+Every vector space has a basis.
+
+Let $V(F)$ be a VS
+
+$X = \{Y \subseteq V | V \text{ is } LI \} = \text{set of all $LI$ subsets of $V$}$
+
+$(X, \subseteq )$ - partially ordered set.
+
+Let $U$ be a chain of X
+
+$W = \cup_{S\in U}S$
+
+To show W is upperbound of V
+
+1. $S \subseteq W$
+2. $W \in X$ to Show $W$ is LI
+
+If every finite subset of $W$ is $LI$, the $W$ is $LI$ 
+
+$P_1 = \{x_1, ..,x_n\}\subseteq W$
+
+$x_i \in s_{\alpha_i}$ $i=1,2,...,n$ $s_{\alpha_i} \in U $
+
+Since $U$ is totally ordered set, there exists $\alpha_k$ st. 
+
+$x_1, x_2,n .., x_n \in S_{\alpha_k} \implies P_1$ is $LI$
+
+Any finite subset is $LI$.
+
+Hence $W$ is $LI \implies W \in X \implies W$ is an upper bound of $U$. 
